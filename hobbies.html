@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Session</title>
+    <link rel="stylesheet" href="photography.css">
+    <button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+    
+    
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research-experience.html">Research Interests</a>
+        <a href="hobbies.html">Other Interests</a>
+        <a href="contact.html">Contact me</a>
+      </nav>
+    <header>
+    <main>
+        <img src="image-container/photography/1.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/2.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/3.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/4.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/5.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/6.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/7.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/8.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/9.jpeg"  height="auto" width="auto" alt="">
+        <img src="image-container/photography/10.jpeg" height="auto" width="auto"  alt="">
+    </main>
+    
+</body>
+</html>
